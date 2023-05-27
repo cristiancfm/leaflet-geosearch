@@ -31,7 +31,7 @@ export default class MapBoxProvider extends AbstractProvider<
     super(options);
 
     const host = 'https://a.tiles.mapbox.com';
-    this.searchUrl = options.searchUrl || `${host}/v4/geocode/mapbox.places/`;
+    this.searchUrl = options.searchUrl || `${host}/geocoding/v5/mapbox.places/`;
   }
 
   endpoint({ query }: EndpointArgument): string {
